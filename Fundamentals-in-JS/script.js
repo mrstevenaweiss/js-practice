@@ -40,7 +40,7 @@
 
 ////// ARRAYS
 
-// let aList = [10, 20, 'test', true, 99]
+///let aList = [10, 20, 'test', true, 99]
 // alert(aList.unshift('1'))
 // alert(alist)
 
@@ -53,6 +53,10 @@
 
 //// DOM
 const headline = document.getElementById("mainHeading")
-
-
 headline.innerHTML = "holy shit";
+
+/// EVENTS
+headline.addEventListener("click", function( event ) {
+  // display the current click count inside the clicked div
+  headline.innerHTML = 'bad words are no good'
+}, false);
